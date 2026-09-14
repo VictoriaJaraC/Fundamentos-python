@@ -6,6 +6,9 @@ renta: float = 0
 hijos: int = 0
 tiene_conyuge: bool = True 
 creditos: float = 0 
+sem: float = 0 
+ivm: float = 0 
+bp: float = 0
 
 limpiar_consola()
 salario_bruto = leer_flotante("Digite el salario")
@@ -35,6 +38,10 @@ if renta >= creditos:
 else:
     renta= 0 
 
-salario_neto = salario_bruto - renta 
+sem = salario_bruto * 0.0583
+ivm = salario_bruto * 0.0433
+bp = salario_bruto * 0.0067
+
+salario_neto = salario_bruto - renta - sem - ivm - bp
 
 print(salario_neto)
