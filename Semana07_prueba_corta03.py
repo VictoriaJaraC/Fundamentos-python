@@ -18,7 +18,7 @@ elif consumo_kwh <= 200 :
 elif consumo_kwh <= 300 :
     energia = 1744.80 + (170 * 58.16) + (consumo_kwh - 200) * 89.24
 else:
-    energia = 1744.80 + (170 * 58.16) + (100 * 89.24) + (consumo_kwh - 200) * 97.27
+    energia = 1744.80 + (170 * 58.16) + (100 * 89.24) + (consumo_kwh - 200) * 92.27
 
 alumbrado = consumo_kwh * 3.02 
 
@@ -35,7 +35,7 @@ else:
 total_pagar = energia + alumbrado + bomberos + IVA
 
 print("=" *50)
-print("   DESGLOSE DE FACTURA ELÉCTRICA (CNFL)   ")
+print("    DESGLOSE DE FACTURA ELÉCTRICA (CNFL)   ")
 print("=" *50)
 print(f"Consumo Mensual:          {consumo_kwh:10.2f} kwh")
 print("=" *50)
