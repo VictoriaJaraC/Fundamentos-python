@@ -1,7 +1,6 @@
 from eii_utils import limpiar_consola, leer_flotante
 
-consumo_kwh: float = 0
-cargo_fijo: float = 0 
+consumo_kwh: float = 0 
 energia: float = 0
 alumbrado: float = 0 
 bomberos: float = 0
